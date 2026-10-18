@@ -9,5 +9,12 @@
 <h1>Codex 测试项目</h1>
 <p>这是一个用来测试 Muse -> Codex 云端链路的小项目。</p>
 <p>测试任务：给页面加一个按钮，点击后显示 Hello</p>
+<button type="button" id="hello-button">显示 Hello</button>
+<p id="hello-message" role="status"></p>
+<script>
+document.getElementById('hello-button').addEventListener('click', function () {
+  document.getElementById('hello-message').textContent = 'Hello';
+});
+</script>
 </body>
 </html>
